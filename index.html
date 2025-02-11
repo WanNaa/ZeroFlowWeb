@@ -240,6 +240,21 @@
                 </div>
             </div>
 
+            <!--button-->
+            <div class="columns">
+                <div class="column is-full">
+                    <div class="controls">
+                        <button class="button is-primary" onclick="resetVideos()">Reset</button>
+                        <button class="button is-info" onclick="playPauseVideo()">Play/Pause</button>
+                        <button class="button is-danger" onclick="endVideos()">End</button>
+                        <button class="button is-warning" onclick="rewindVideos()">-10s</button>
+                        <progress value="0" max="100"></progress>
+                        <button class="button is-success" onclick="fastForwardVideos()">+10s</button>
+
+                    </div>
+                </div>
+            </div>
+
             <!--description-->
             <ul>
                 <li><i>

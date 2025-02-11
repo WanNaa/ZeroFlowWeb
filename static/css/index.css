@@ -160,6 +160,45 @@ body {
 /**
  * Added
  */
+ /* 隐藏视频播放器的默认进度条 */
+video::-webkit-media-controls-progress-bar {
+  display: none;
+}
+
+/* 如果需要，也可以隐藏其他控制元素 */
+video::-webkit-media-controls {
+  display: none; /* 隐藏所有控制元素 */
+}
+
+/* 或者只隐藏特定的控制元素 */
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+
+.controls {
+    /* 确保进度条与按钮在同一行 */
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    margin-right: 5px;
+}
+
+progress {
+    width: 150px; /* 进度条的宽度 */
+    height: 20px; /* 进度条的高度 */
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
 .column .content {
     text-align: center;
 }
