@@ -160,6 +160,10 @@ body {
 /**
  * Added
  */
+.column .content {
+    text-align: center;
+}
+
 table {
   margin-bottom: 30px;
   width: 100%;
